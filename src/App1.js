@@ -27,7 +27,7 @@ class App1 extends React.Component {
         console.log('I just updated');
     }
     componentWillUnmount(){
-        console.log('Goodbye, cruel world')
+        console.log('Goodbye, cruel world');
     }
 
     render() {
