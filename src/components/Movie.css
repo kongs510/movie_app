@@ -1,6 +1,6 @@
 .movie {
     background-color: white;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     font-weight: 300;
     padding: 20px;
     border-radius: 5px;
@@ -27,7 +27,7 @@
 .movie .movie__title,
 .movie .movie__year {
     margin: 0px;
-    font-weight: 300px;
+    font-weight: 100;
 }
 
 .movie .movie__title {

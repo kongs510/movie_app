@@ -32,14 +32,13 @@ class Home extends React.Component {
                     isLoading
                         ? (
                             <div className="loader">
-                                <span className="loader__text">Loading....</span>
+                                <span className="loader__text" >Loading....</span>
                             </div>
                         )
                         : (
                             <div className="Movies">
                                 {
                                     movies.map((movie) => (
-
                                         <Movie
                                             key={movie.id}
                                             id={movie.id}
@@ -48,6 +47,7 @@ class Home extends React.Component {
                                             summary={movie.summary}
                                             poster={movie.medium_cover_image}
                                             genres={movie.genres}
+                                            backgrond={movie.background_image}
                                             />
                                     ))
                                 };

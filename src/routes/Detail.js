@@ -1,4 +1,5 @@
 import React from "react";
+import './Detail.css'
 
 
 
@@ -15,7 +16,12 @@ class Detail extends React.Component {
     render() {
         const {location} = this.props;
         if(location.state){
-            return <span>{location.state.title}</span>
+            return <div>
+            <img src={location.state.poster}/>
+            <h1>{location.state.title}</h1>
+            <h2>{location.state.year}</h2>
+            <p>{location.state.summary.slice(0,400)}</p>
+            </div>  
         }else{
             return null;
         }

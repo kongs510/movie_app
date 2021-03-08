@@ -7,9 +7,15 @@ import "./About.css";
         return(
             <div className="about__container">
                 <span>
-                    "freedom is the freedom to say that two make four. If that is granted, all else follows."
+                    <h1>Movie api</h1>
+                    <h2>영화 평점 웹사이트 구현</h2>
                 </span>
-                <span>- George Orwell, 1984</span>
+                <span>
+                    <h5>1차 완성<br/>
+                        지속적으로 수정예정                        
+                    </h5>
+                    
+                </span>
             </div>    
         );}
 

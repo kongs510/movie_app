@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import "./Movie.css";
 import {Link} from "react-router-dom";
 
-function Movie({title, year, summary, poster, genres}) {
+function Movie({title, year, summary, poster, genres,backgrond}) {
     return (
         <div className="movie">
             <Link
                 to={{
                     pathname: 'movie-detail',
-                    state:{ year,title,summary,poster,genres },
+                    state:{ year,title,summary,poster,genres,backgrond },
                 }}
             >
                 <img src={poster} alt={title} title={title}/>
@@ -35,9 +35,8 @@ Movie.propTypes = {
     title: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired,
     poster: PropTypes.string.isRequired,
-    genres: PropTypes
-        .arrayOf(PropTypes.string)
-        .isRequired
+    genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+    backgrond: PropTypes.string.isRequired
 };
 
 export default Movie;
